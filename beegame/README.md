@@ -1,4 +1,7 @@
-The Bee Game! :honeybee:
+## The Bee Game! :honeybee:
+
+![version](https://img.shields.io/badge/php-7.2-blue.svg?logo=php) 
+![tag](https://img.shields.io/badge/tag-bee_game-green.svg) 
 
 ## Instalation
 copy the beegame folder to the desired location into your pc
