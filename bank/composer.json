@@ -1,0 +1,19 @@
+{
+    "name": "moises/bank",
+    "description": "Bank CLI app",
+    "authors": [{
+        "name": "Moises Gaspar",
+        "email": "moisesgaspar22@gmail.com"
+    }],
+    "autoload": {
+        "psr-4": {
+            "bankApp\\": "app"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "phpunit/php-invoker": "^1.1",
+        "monolog/monolog": "^1.23"
+    }
+}
