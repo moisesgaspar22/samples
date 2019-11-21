@@ -128,3 +128,8 @@ Manage accounts:
 Balance:
 
 <img src="https://preview.ibb.co/eAiF7H/balance.png" width="348">
+
+### The tests
+
+<img src="https://i.ibb.co/k8T7QKb/Preview-README-md-Moises-2019-11-21-15-40-32.png">
+
