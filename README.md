@@ -12,6 +12,12 @@ Please note that this is just the tip of the iceberg...❄️
 
 I'm not explaining design patterns like singletons or factories or even architectural choices, if you're looking at this then you know what your looking for and you will recognize it once you see it 🙂
 
+> Also have some public contributions where you can check my fingerprint
+
+> [Bigcommerce WP plugin](https://wordpress.org/plugins/bigcommerce/)
+
+> [The repo here](https://github.com/bigcommerce/bigcommerce-for-wordpress)
+
 You can find me 📧 moisesgaspar22@gmail.com
 
 Enjoy!
