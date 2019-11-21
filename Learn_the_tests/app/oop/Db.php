@@ -19,9 +19,9 @@ class Db implements DbInterface
     /**
      * mocking a database service
      *
-     * @param [type] $dataBase
-     * @param [type] $userName
-     * @param [type] $password
+     * @param string $dataBase | dummy
+     * @param string $userName | dummy
+     * @param string $password | dummy
      */
     public function __construct($dataBase, $userName, $password)
     {
