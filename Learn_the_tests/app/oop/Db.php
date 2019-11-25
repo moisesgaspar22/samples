@@ -42,6 +42,8 @@ class Db implements DbInterface
 
     /**
      * Dummy methods to set to database
+     * This method should implement a response class
+     * For the sake of simplicity it returns a simple array
      *
      * @param string $name | dummy
      * @param array $value | dummy
