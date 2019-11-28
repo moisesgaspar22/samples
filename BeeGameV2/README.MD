@@ -9,7 +9,7 @@ This is the same version of the game but this time I'm using Pimple, a simple PH
 
 [More about it here](https://pimple.symfony.com/)
 
-This is just a proof of concept 
+This is a overkill but is just a proof of concept 
 
 ## Instalation
 copy the beegame folder to the desired location into your pc
