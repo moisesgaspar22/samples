@@ -27,10 +27,6 @@ class BeeHive
     public function __construct(Container $container)
     {
         $this->container = $container;
-        /**
-         * here I'm injecting is own property, this way and because spanBees is public
-         * I can use external dnaFiles to span different species of bees if needed
-         */
         $this->spawnBees($this->container[BeeProvider::FACTORY_INSTRUCTIONS]);
     }
 
