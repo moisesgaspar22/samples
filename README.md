@@ -6,6 +6,7 @@ This is jus a small sample of some code to demonstrate some concepts.
 Inside this repository you will find 3 projects:
 * 🏦 - A CLI php bank application
 * 🐝 - A php browser simple Bee game
+* 🐝 - The same simple Bee game but this time more scalable and using Pimple Dependency Injector
 * 🧪 A phpunit test app scenario to demonstrate some unit and integration test concepts/implementation
 
 Please note that this is just the tip of the iceberg...❄️
