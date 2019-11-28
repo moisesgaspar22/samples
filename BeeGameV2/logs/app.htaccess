@@ -1,4 +1,4 @@
-# BigCommerce Plugin Rule  
+# BeeGame   
 <FilesMatch ".*">
     Order Allow,Deny
     Deny from All

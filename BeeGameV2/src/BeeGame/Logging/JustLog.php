@@ -8,7 +8,7 @@ use Monolog\Handler\StreamHandler;
 /**
  * Class Log
  *
- * @package BigCommerce\Logging
+ * @package BeeGame\Logging
  */
 class JustLog {
     const EMERGENCY = 'emergency';
@@ -20,7 +20,7 @@ class JustLog {
     const INFO      = 'info';
     const DEBUG     = 'debug';
 
-    const LOG_NAME  = 'app-name';
+    const LOG_NAME  = 'BeeGame-name';
 
     /**
      * @var Logger
@@ -64,7 +64,7 @@ class JustLog {
             $this->log->pushHandler( $handler );
         } catch ( \Exception $e ) {
             // log is not writeable
-            error_log( __( 'Unable to initialize import error log', 'bigcommerce' ) );
+            error_log( __( 'Unable to initialize import error log', 'BeeGame' ) );
         }
     }
 
@@ -124,7 +124,7 @@ class JustLog {
         $htaccess_file = fopen( $directory_path . ".htaccess", "a+" );
 
         $rulles = <<<HTACCESS
-# BigCommerce Plugin Rule  
+# BeeGame Plugin Rule  
 <FilesMatch ".*">
     Order Allow,Deny
     Deny from All
@@ -144,7 +144,7 @@ HTACCESS;
         if ( file_exists( $this->log_path ) ) {
             if ( filesize( $this->log_path ) == 0 ) {
                 return [
-                    'message'       => __( 'The log file is empty', 'app' ),
+                    'message'       => __( 'The log file is empty', 'BeeGame' ),
                     'log_content'   => '',
                     'log_date_time' => '',
                 ];
@@ -159,7 +159,7 @@ HTACCESS;
             ];
         } else {
             return [
-                'message'       => __( 'Log not found -> ' . $this->log_path, 'app' ),
+                'message'       => __( 'Log not found -> ' . $this->log_path, 'BeeGame' ),
                 'log_content'   => '',
                 'log_date_time' => '',
             ];
