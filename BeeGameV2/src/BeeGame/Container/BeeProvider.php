@@ -5,7 +5,8 @@ namespace BeeGame\Container;
 use Pimple\Container;
 use BeeGame\Game\Bee;
 
-class BeeProvider extends Provider {
+class BeeProvider extends Provider
+{
 
     const NAME                 = 'bee.name';
     const ADN                  = 'bee.adn';
@@ -15,15 +16,16 @@ class BeeProvider extends Provider {
     /**
      * @param Container $container
      */
-    public function register( Container $container ) {
+    public function register(Container $container)
+    {
 
-        $container[self::FACTORY_INSTRUCTIONS] = function(container $container){
+        $container[self::FACTORY_INSTRUCTIONS] = function (container $container) {
             return include($container[self::INSTRUCTIONS_PATH]);
         };
 
         // Bee factory
         $container[self::NAME] = $container->factory(
-            function ( Container $container ) {
+            function (Container $container) {
                 return  new Bee($container[ self::ADN ]);
             }
         );
