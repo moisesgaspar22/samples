@@ -29,4 +29,4 @@ localhost:8080
 ```
 
 ## Objective
-[Same as the original](https://github.com/moisesgaspar22/samples/edit/master/beegame/README.md)
+[Same as the original](https://github.com/moisesgaspar22/samples/tree/master/beegame)
