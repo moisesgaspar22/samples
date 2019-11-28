@@ -54,7 +54,7 @@ class Bee
      */
     private function setLifeSpan($lifeSpan)
     {
-        if ($lifeSpan <= 0){
+        if ($lifeSpan <= 0) {
             $this->status   = 0;
             $this->lifeSpan = -1;
             return false;
@@ -83,7 +83,7 @@ class Bee
     }
 
     /**
-     * ☠️ kill all bees 
+     * ☠️ kill all bees
      * @return boolean
      */
     public function getKillAll()

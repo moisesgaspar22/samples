@@ -64,7 +64,7 @@ class GameMechanics
      * @param $mt
      */
     private static function renderView($view, $data = [])
-    {   
+    {
         extract($data);
         $viewPath = realpath(__DIR__.'/../Views/'.$view);
         include_once($viewPath);

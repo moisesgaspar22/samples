@@ -8,7 +8,7 @@ foreach ($_SESSION['bees'] as $position => $mBee) {
             print_r($mBee);
             echo '</span>';
             echo'<br>';
-        }
+}
 ?>
 <hr/>
 <form action="index.php" method="post">

@@ -30,13 +30,14 @@ class app
      */
     public function __construct(Container $container = null)
     {
-        if(!$container) {
+        if (!$container) {
             $this->container = new Container(['name' => 'BeeGame']);
         } else {
             $this->container = $container;
         }
 
-        $this->providers = new class{};
+        $this->providers = new class{
+        };
     }
 
     /**
@@ -88,8 +89,8 @@ class app
         $this->providers->GMProvider = new GameMechanicsProvider();
 
         // register all providers
-        foreach($this->providers as $provider){
-            $this->container->register( $provider );
+        foreach ($this->providers as $provider) {
+            $this->container->register($provider);
         }
     }
 
@@ -98,7 +99,8 @@ class app
      *
      * @return void
      */
-    public function container() {
+    public function container()
+    {
         return $this->container;
     }
 }
