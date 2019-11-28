@@ -34,8 +34,6 @@ class GameMechanics
         $beeHive       = $_SESSION['bees'];
         self::$pointer = rand(0, sizeof($beeHive)-1);
 
-        //printf('<h1> 🐝 %s bee at position %s took a hit!</h1>', $beeHive[self::$pointer]->type, self::$pointer);
-
         $beeHive[self::$pointer]->takeHit();
 
         if (!$beeHive[self::$pointer]->status) {
