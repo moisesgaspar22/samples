@@ -7,7 +7,6 @@ use BeeGame\Game\Bee;
 
 class BeeProvider extends Provider
 {
-
     const NAME                 = 'bee.name';
     const ADN                  = 'bee.adn';
     const FACTORY_INSTRUCTIONS = 'bee.bluprints';
@@ -18,7 +17,6 @@ class BeeProvider extends Provider
      */
     public function register(Container $container)
     {
-
         $container[self::FACTORY_INSTRUCTIONS] = function (container $container) {
             return include($container[self::INSTRUCTIONS_PATH]);
         };

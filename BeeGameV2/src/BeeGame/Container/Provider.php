@@ -6,7 +6,6 @@ use Pimple\ServiceProviderInterface;
 
 abstract class Provider implements ServiceProviderInterface
 {
-    
     protected $callbacks = [];
 
     public function __get($property)
@@ -17,10 +16,18 @@ abstract class Provider implements ServiceProviderInterface
         return null;
     }
 
-    protected function create_callback($identifier, callable $callback)
+    protected function createCallback($identifier, callable $callback)
     {
         if (array_key_exists($identifier, $this->callbacks)) {
-            throw new \InvalidArgumentException(sprintf(__('Invalid identifier: %s has already been set.', 'app'), $identifier));
+            throw new \InvalidArgumentException(
+                sprintf(
+                    __(
+                        'Invalid identifier: %s has already been set.',
+                        'app'
+                    ),
+                    $identifier
+                )
+            );
         }
         $this->callbacks[ $identifier ] = $callback;
         return $callback;

@@ -7,7 +7,6 @@ use BeeGame\Logging\JustLog;
 
 class Log extends Provider
 {
-
     const LOGGER   = 'logger.log';
     const LOG_PATH = 'logger.log_path';
 

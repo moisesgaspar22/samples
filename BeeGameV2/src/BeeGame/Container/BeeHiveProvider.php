@@ -7,7 +7,6 @@ use BeeGame\Game\BeeHive;
 
 class BeeHiveProvider extends Provider
 {
-
     const NAME  = 'bee.hive.name';
 
     /**

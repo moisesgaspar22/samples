@@ -33,7 +33,6 @@ class BeeHive
     /**
      * @param $beeInstructionsBuild
      * @return bool|null
-     * @todo implement a method to validate if the instructions are valid
      */
     public function spawnBees($beeInstructionsBuild = [])
     {

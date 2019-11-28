@@ -7,7 +7,6 @@ use BeeGame\Game\GameMechanics;
 
 class GameMechanicsProvider extends Provider
 {
-
     const NAME         = 'game.name';
     const NAME_INIT    = 'game.init';
     const NAME_HIT_BEE = 'game.hit.bee';
@@ -17,7 +16,6 @@ class GameMechanicsProvider extends Provider
      */
     public function register(Container $container)
     {
-
         $container[ self::NAME ] = function (Container $container) {
             return  new GameMechanics();
         };
