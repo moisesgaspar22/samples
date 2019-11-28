@@ -106,7 +106,7 @@ class JustLog {
     private function init_log_dir() {
         $file_log_dir = dirname( $this->log_path );
 
-        // Check if Dir already exists, if not create using wp_mkdir_p
+        // Check if Dir already exists, if not create using mkdir
         if ( ! is_dir( $file_log_dir ) ) {
             mkdir($file_log_dir, 0777, true);
 
