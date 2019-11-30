@@ -10,6 +10,10 @@ use BeeGame\Container\GameMechanicsProvider;
 
 class app
 {
+    
+    const APP_NAME = 'BeeGame';
+    const VERSION  = '1.0.0';
+    
     /**
      * container placeholder
      *
@@ -31,13 +35,12 @@ class app
     public function __construct(Container $container = null)
     {
         if (!$container) {
-            $this->container = new Container(['name' => 'BeeGame']);
+            $this->container = new Container(['name' => self::APP_NAME]);
         } else {
             $this->container = $container;
         }
 
-        $this->providers = new class{
-        };
+        $this->providers = new class{};
     }
 
     /**
@@ -92,6 +95,9 @@ class app
         foreach ($this->providers as $provider) {
             $this->container->register($provider);
         }
+        
+        //Let's free some memory
+        $this->providers = null;
     }
 
     /**
