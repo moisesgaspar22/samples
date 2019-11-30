@@ -12,7 +12,7 @@ Inside this repository you will find 3 projects:
 
 Please note that this is just the tip of the iceberg...❄️
 
-I'm not explaining design patterns like singletons or factories or even architectural choices, if you're looking at this then you know what your looking for and you will recognize it once you see it 🙂
+Feel free to look arround :-).
 
 > Also have some public contributions where you can check my fingerprint
 
