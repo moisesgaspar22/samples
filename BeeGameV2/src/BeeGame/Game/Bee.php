@@ -39,13 +39,16 @@ class Bee
      * bee constructor.
      * @param $dna array | like a manifest or build instructions blue print
      */
-    public function __construct($dna)
+    public function __construct($dna = [])
     {
-        $this->type      = $dna['type'];
-        $this->hitPoints = $dna['hitPoints'];
-        $this->killAll   = $dna['killAll'];
-        //set method
-        $this->setLifeSpan($dna['lifeSpan']);
+        if (!empty($dna)) {
+            $this->type      = $dna['type'];
+            $this->hitPoints = $dna['hitPoints'];
+            $this->killAll   = $dna['killAll'];
+            $this->lifeSpan  = $dna['lifeSpan'];
+            //set method
+            $this->setLifeSpan($this->lifeSpan);
+        }
     }
 
     /**

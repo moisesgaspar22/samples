@@ -21,6 +21,8 @@ class BeeProvider extends Provider
             return include($container[self::INSTRUCTIONS_PATH]);
         };
 
+        $container[self::ADN] = [];
+
         // Bee factory
         $container[self::NAME] = $container->factory(
             function (Container $container) {

@@ -45,7 +45,7 @@ class BeeHive
         foreach ($beeInstructionsBuild as $beeDna) {
             for ($t= 1; $t<= $beeDna['amount']; $t++) {
                 $this->container[BeeProvider::ADN] = $beeDna['dna'];
-                $beeHive[] = $this->container[BeeProvider::NAME];
+                $beeHive[]                         = $this->container[BeeProvider::NAME];
             }
         }
 

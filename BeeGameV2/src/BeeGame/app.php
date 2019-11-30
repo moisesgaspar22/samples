@@ -34,12 +34,7 @@ class app
      */
     public function __construct(Container $container = null)
     {
-        if (!$container) {
-            $this->container = new Container(['name' => self::APP_NAME]);
-        } else {
-            $this->container = $container;
-        }
-
+        $this->container = $container ?? new Container(['name' => self::APP_NAME]);
         $this->providers = new class{};
     }
 
