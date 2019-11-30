@@ -24,7 +24,7 @@ class BeeProvider extends Provider
         // Bee factory
         $container[self::NAME] = $container->factory(
             function (Container $container) {
-                return  new Bee($container[ self::ADN ]);
+                return  new Bee($container[self::ADN]);
             }
         );
     }
