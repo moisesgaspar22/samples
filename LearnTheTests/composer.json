@@ -1,14 +1,11 @@
 {
     "name": "root/php-tests",
-    "require": {
-        "phpunit/phpunit": "^8.0"
-    },
     "autoload": {
         "psr-4": {
             "someApp\\": "app/"
         }
     },
     "scripts": {
-        "test": "php ../vendor/bin/phpunit --testdox"
+        "test": "composer install && php ../vendor/bin/phpunit --testdox"
     }
 }
