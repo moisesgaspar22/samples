@@ -6,7 +6,9 @@
             "email": "moisesgaspar22@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+         "phpunit/phpunit": "^8.0"
+    },
     "scripts": {
         "test": "composer run-script test --working-dir LearnTheTests/"
     }
