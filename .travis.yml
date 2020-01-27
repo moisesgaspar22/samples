@@ -8,11 +8,7 @@ php:
 before_script:
   - composer self-update
   - composer install --prefer-source
-
-# Commands you want to run that will verify your build.
-# script: 
-#   - phpunit
- script:
+script:
   - composer run-script test
 
 # after_success:
