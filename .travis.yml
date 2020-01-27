@@ -12,8 +12,7 @@ before_script:
 # Commands you want to run that will verify your build.
 # script: 
 #   - phpunit
-
- script: 
+ script:
   - composer run-script test
 
 # after_success:
