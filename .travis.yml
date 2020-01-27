@@ -1,0 +1,13 @@
+language: php
+php: 
+  - 7.3.0
+# before_install:
+# install:
+# before_script
+script: 
+  - composer run-script test
+# after_success:
+# after_script:
+# before_deploy:
+# deploy:
+# after_deploy:
