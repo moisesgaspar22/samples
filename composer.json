@@ -1,0 +1,13 @@
+{
+    "name": "gitpod/samples",
+    "authors": [
+        {
+            "name": "moises gaspar",
+            "email": "moisesgaspar22@gmail.com"
+        }
+    ],
+    "require": {},
+    "scripts": {
+        "test": "composer run-script test --working-dir LearnTheTests/"
+    }
+}

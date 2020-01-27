@@ -27,7 +27,7 @@ class OopTest extends TestCase
     
     public function testInstantiateNewDbappWithDbInstance()
     {
-        $db = new db('', '', '');
+        $db = new Db('', '', '');
         $this->assertInstanceOf(DbInterface::class, $db);
 
         $dbApp = new DbApp($db);
